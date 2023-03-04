@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background-color: #ebc288;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:#489c79 ;
+    text-align: center;
+}
+h1 {
+    font-size: 35px;
+    color:#0f4931 ;
+}
+.firstLine::first-line {
+    color: rgb(15, 15, 15);
+    font-weight: bold;
+}
+.firstLetter::first-Letter{
+    color: rgb(14, 13, 13);
+    font-size: 50px;
+}
+.selection::selection{
+    background-color: rgb(189, 42, 91);
+    color: rgb(215, 215, 240);
+}
+.marker li::marker{
+    content: "[x]";
+    color: blue;
+   
+}
+.placeholder::placeholder {
+    color: rgb(2, 2, 2);
+    
+}
+.before::before {
+    content:"[x]";
+    color: rgb(24, 173, 37);
+    font-weight: bold;
+}
+.after::after {
+    content: "[x]";
+    color: green;
+    font-weight:bold;
+
+}

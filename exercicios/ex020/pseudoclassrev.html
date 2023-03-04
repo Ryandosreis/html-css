@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>revisão de PseudoClasses</title>
+    <style>
+        body {
+            background-color: rgb(54, 53, 53);
+            color: wheat;
+            text-align: center;
+        }
+        h1 {
+            color: blueviolet;
+        }
+        .btnhover:hover {
+            background-color: rgba(10, 10, 90, 0.699);
+            font-weight: bold;
+            font-size: 15px;
+            color: white;
+
+        }
+        .btnactive:active {
+            background-color: rgb(65, 5, 121);
+            color: white;
+            font-weight: bold;
+        }
+        .btndisabled:disabled {
+             opacity: 0.9;
+             color: black;
+             background-color: darkgray;
+             font-weight: bold;
+        }
+        .empty:empty{
+            background-color: rgb(110, 19, 19);
+             
+        }
+        .firstoftype p:first-of-type {
+            font-weight: bold;
+            color: rgb(110, 18, 18);
+            font-size: 20px;
+        }
+        .lastoftype p:last-of-type {
+            font-weight: bold;
+            color: blueviolet;
+
+        }
+        .inputfocus:focus {
+            background-color: rgb(121, 121, 11);
+
+        }
+        .btnnot:not(.new){
+            background-color: rgb(51, 9, 90);
+
+        } 
+        .checkbox:checked {
+            width: 30px;
+            height: 30px;
+        }
+        .checkboxafter::after {
+            content: "desativado";
+            left: 30px;
+            position: relative;
+            color: #FFF;
+            font-size: 15px;
+        }
+        .checkboxafter:checked::after {
+            content: "ativado";
+            color: rgb(0, 0, 0);
+            position: left;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>PSEUDO-CLASSES EM CSS</h1>
+
+    <hr>
+    <h2>1 - hover</h2>
+    <button class="btnhover">Botão</button>
+    <hr>
+
+    <h2>2 - active</h2>
+    <button class="btnactive">Botão</button>
+    <hr>
+
+    <h2>3 - disabled</h2>
+    <button class="btndisabled" disabled >Botão</button>
+    <hr>
+
+    <h2>4 - empty</h2>
+    <button class='empty'>Botão</button> <br>
+    <button class='empty'>botão</button> <br>
+    <button class='empty'>Botão</button>
+    <hr>
+
+    <h2>5 - first of type</h2>
+    <div class="firstoftype">
+        <p>Parágrafo de teste 1</p>
+        <p>Parágrafo de teste 2</p>
+        <p>Parágrafo de teste 3</p>
+    </div>
+    <hr>
+
+    <h2>6 -last of type</h2>
+    <div class="lastoftype">
+        <p>Parágrafo de teste 1</p>
+        <p>Parágrafo de teste 2</p>
+        <p>Parágrafo de teste 3</p>
+    </div>
+    <hr>
+
+    <h2>7 -focus</h2>
+    <input type="text" class="inputfocus">
+    
+    <hr>
+
+    <h2>8 -not</h2>
+    
+    <button class="btnnot">Botão</button> <br>
+    <button class="btnnot new">botaõ</button> <br>
+    <button class="btnnot">Botão</button>
+    <hr>
+
+    <h2>9 -checked</h2>
+    <input type="checkbox" class="checkbox"> <br>
+    <input type="checkbox" class="checkbox"> <br>
+    <input type="checkbox" class="checkbox">
+    <hr>
+    <h2>10 -checked + after</h2>
+    <input type="checkbox" class="checkboxafter"> <br>
+    <input type="checkbox" class="checkboxafter"> <br>
+    <input type="checkbox" class="checkboxafter">
+
+</body>
+</html>
