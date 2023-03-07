@@ -19,11 +19,11 @@ header h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-top: 50px;
     text-align: center;
-    font-size: 10vw;
-   font-variant: small-caps;
+    font-size: 7vw;
+    font-variant: small-caps;
 }
 header p{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     font-weight: bold;
     text-align: center;
 }
@@ -36,31 +36,45 @@ a {
 a:hover {
     text-decoration: underline;
 }
+main {
+}
 section {
-    padding: 10vh 0vh;
-    line-height: 2em;
+    font-weight: bold;
+    font-family: cursive;
+    padding: 5vw 5vw;
     padding-left: 30px;
+}
+section p {
+    padding-bottom: 1.5em;
+    font-size: 3vh;
+    line-height: 2em;
 }
 .normal {
     background-color: white;
 }
 .imagem {
     background-color: rgb(51, 50, 50);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.521);
+    background-size: cover;
 }
 .imagem p {
-    width: 400px;
-    background-color: rgb(95, 86, 86);
-}
-main {
-    font-family: cursive;
-    margin: 20px;
-    font-size: 3vw;
-}
-footer {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: black;
     color: white;
-    font-size: 1.1em;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.562);
+    text-shadow: 1px 1px 0px black;
+}
+#img01 {
+    background: white url('../imagens/background001.jpg') right center no-repeat fixed  ;
+}
+#img02 {
+    background: white url('../imagens/background002.jpg') right center no-repeat fixed; 
+}
+
+footer {
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 1em;
     padding: 10px;
     text-align: center;
 }
