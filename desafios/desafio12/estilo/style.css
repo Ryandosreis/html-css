@@ -1,5 +1,10 @@
 @charset "UTF=8";
 
+
+:root {
+    --fontpadrao:Verdana, Geneva, Tahoma, sans-serif;
+    --fontcordel:;
+}
 * {
     margin: 0px;
     padding: 0px;
